@@ -1,0 +1,27 @@
+From: Paladox <thomasmulhall410@yahoo.com>
+Date: Thu, 4 Apr 2019 14:43:38 +0200
+Subject: Update GitPython to 2.1.11
+
+Switch to gitdb2 / smmap2.
+
+Bug: T214739
+Change-Id: I8426d18792e68a4c85715ab058e8c7bb9252058a
+---
+ requirements.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/requirements.txt b/requirements.txt
+index ced583d..60968cb 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -4,7 +4,9 @@ PyYAML>=3.1.0
+ Paste
+ WebOb>=1.2.3
+ paramiko>=1.8.0,<2.0.0
+-GitPython>=0.3.3
++GitPython==2.1.11
++smmap2==2.0.5
++gitdb2==2.0.5
+ python-daemon>=2.0.4,<2.1.0
+ extras
+ statsd>=1.0.0,<3.0
